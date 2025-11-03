@@ -1,0 +1,47 @@
+opencost:
+  prometheus:
+    internal:
+      namespaceName: lens
+      serviceName: lens-prometheus-server
+      port: 9090
+
+  dataRetention:
+    dailyResolutionDays: 30
+
+  exporter:
+    defaultClusterId: "default-cluster"
+    replicas: 1
+    resources:
+      requests:
+        cpu: "10m"
+        memory: "55Mi"
+      limits:
+        memory: "1Gi"
+    persistence:
+      enabled: true
+      storageClass: "oci-bv"
+      accessMode: ReadWriteOnce
+      size: 50Gi
+
+  customPricing:
+    enabled: true
+    createConfigmap: true
+    configmapName: pricing-configs
+    configPath: /tmp/custom-config
+    provider: oracle
+    costModel:
+      CPU: 0.031611
+      spotCPU: 0.006655
+      RAM: 0.004237
+      spotRAM: 0.000892
+      GPU: 6
+      storage: 0.00005479452
+      zoneNetworkEgress: 0.01
+      regionNetworkEgress: 0.01
+      internetNetworkEgress: 0.143
+
+  carbonCost:
+    enabled: false
+
+  cloudCost:
+    enabled: false

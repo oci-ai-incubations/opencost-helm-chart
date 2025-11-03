@@ -1,0 +1,21 @@
+Then make sure your ConfigMap looks like this:
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pricing-configs
+  namespace: opencost
+data:
+  default.json: |
+    {
+      "CPU": "0.031611",
+      "GPU": "6",
+      "RAM": "0.004237",
+      "spotCPU": "0.006655",
+      "spotRAM": "0.000892",
+      "storage": "5.479452e-05",
+      "zoneNetworkEgress": "0.01",
+      "regionNetworkEgress": "0.01",
+      "internetNetworkEgress": "0.143",
+      "provider": "oracle"
+    }
