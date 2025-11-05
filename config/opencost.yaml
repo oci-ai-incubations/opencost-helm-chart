@@ -13,8 +13,8 @@ opencost:
     replicas: 1
     image:
       registry: iad.ocir.io
-      repository: iduyx1qnmway/opencost
-      tag: lens-custom-provider
+      repository: iduyx1qnmway/lens-metric-collector/opencost
+      tag: latest
       pullPolicy: Always
     resources:
       requests:
