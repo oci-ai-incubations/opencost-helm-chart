@@ -16,6 +16,17 @@ maintainers:
 annotations:
   upstream: https://github.com/opencost/opencost-helm-chart
   upstreamVersion: "2.4.0"
+  artifacthub.io/displayName: "OpenCost Lens"
+  artifacthub.io/category: "monitoring-logging"
+  artifacthub.io/recommendations: "false"
+  artifacthub.io/license: "Apache-2.0"
+  artifacthub.io/links: |
+    - name: Source
+      url: https://github.com/gablyu-oci/opencost-helm-chart
+    - name: OCI GPU Scanner
+      url: https://github.com/oci-ai-incubations/oci-gpu-scanner
+    - name: Upstream Chart
+      url: https://github.com/opencost/opencost-helm-chart
 sources:
   - https://github.com/gablyu-oci/opencost-helm-chart
 home: https://github.com/gablyu-oci/opencost-helm-chart
