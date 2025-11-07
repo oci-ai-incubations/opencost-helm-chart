@@ -1,7 +1,7 @@
 apiVersion: v2
 appVersion: 1.118.0
-name: opencost
-description: OpenCost and OpenCost UI
+name: opencost-lens
+description: OpenCost and OpenCost UI - Lens customized version
 type: application
 keywords:
 - cloud-costs
@@ -9,11 +9,13 @@ keywords:
 - finops
 - monitoring
 - opencost
-version: 2.4.1
+- lens
+version: 1.0.0
 maintainers:
-  - name: jessegoodier
-  - name: toscott
-  - name: mittal-ishaan
-  - name: brito-rafa
-    email: rafa@stormforge.io
-home: https://github.com/opencost/opencost-helm-chart
+  - name: gablyu-oci
+annotations:
+  upstream: https://github.com/opencost/opencost-helm-chart
+  upstreamVersion: "2.4.0"
+sources:
+  - https://github.com/gablyu-oci/opencost-helm-chart
+home: https://github.com/gablyu-oci/opencost-helm-chart
