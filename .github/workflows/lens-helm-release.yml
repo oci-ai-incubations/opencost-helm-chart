@@ -31,7 +31,7 @@ jobs:
 
       - name: Update Helm repo index
         run: |
-          helm repo index ./docs --url https://gablyu-oci.github.io/opencost-helm-chart
+          helm repo index ./docs --url https://oci-ai-incubations.github.io/opencost-helm-chart
 
       - name: Commit changes to docs/
         run: |

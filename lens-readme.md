@@ -104,7 +104,7 @@ kubectl get namespace opencost -o json | jq '.spec.finalizers = []' | kubectl re
 ```
 ## Additional Resources
 
-- [Lens Forked OpenCost GitHub](https://github.com/gablyu-oci/opencost/tree/custom_pricing)
+- [Lens Forked OpenCost GitHub](https://github.com/oci-ai-incubations/opencost)
 - [OpenCost Documentation](https://www.opencost.io/docs/)
 - [OpenCost original Helm Chart Repository](https://github.com/opencost/opencost-helm-chart)
 
